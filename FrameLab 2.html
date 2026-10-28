@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FrameLab | School of Digital Skills</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8ff;
+    color: #17233c;
+    line-height: 1.6;
+}
+
+header {
+    background: #ffffff;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 2px 12px #00000010;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #155eef;
+}
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #334155;
+}
+
+nav a {
+    text-decoration: none;
+    color: #17233c;
+    margin-left: 18px;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 90px 7%;
+    background: linear-gradient(135deg, #102a56, #155eef);
+    color: white;
+    text-align: center;
+}
+
+.hero .tag {
+    color: #bcd3ff;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 60px);
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #155eef;
+    text-decoration: none;
+    padding: 13px 25px;
+    margin: 5px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.btn-blue {
+    background: #155eef;
+    color: white;
+}
+
+section {
+    padding: 65px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #102a56;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.course {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 12px;
+    border: 1px solid #e0e8f5;
+    box-shadow: 0 5px 18px #102a5610;
+    transition: transform 0.2s;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+}
+
+.course .number {
+    font-size: 14px;
+    color: #155eef;
+    font-weight: bold;
+}
+
+.course h3 {
+    margin: 12px 0;
+    font-size: 21px;
+}
+
+.course p {
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+.course a {
+    color: #155eef;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about {
+    background: #eaf1ff;
+    text-align: center;
+}
+
+.about p {
+    max-width: 720px;
+    margin: 12px auto;
+}
+
+.contact {
+    text-align: center;
+    background: white;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+footer {
+    background: #102a56;
+    color: white;
+    text-align: center;
+    padding: 24px 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px 8px;
+        display: inline-block;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        FrameLab
+        <span>SCHOOL OF DIGITAL SKILLS</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <p class="tag">SKILLS TODAY. SUCCESS TOMORROW.</p>
+
+    <h1>Welcome to FrameLab</h1>
+
+    <p>Learn Digital Skills. Build Your Future.</p>
+
+    <a href="#courses" class="btn">Explore Courses</a>
+    <a href="#contact" class="btn">Contact Us</a>
+</div>
+
+<section id="courses">
+    <div class="section-title">
+        <h2>Our Courses</h2>
+        <p>सीखिए नई डिजिटल स्किल्स और अपने करियर को आगे बढ़ाइए।</p>
+    </div>
+
+    <div class="courses">
+
+        <div class="course">
+            <span class="number">COURSE 01</span>
+            <h3>DCA</h3>
+            <p>Diploma in Computer Applications. कंप्यूटर की बुनियादी जानकारी और प्रैक्टिकल ट्रेनिंग।</p>
+            <p><strong>Course Fee: ₹2,999</strong></p>
+            <a href="#contact">Enquire Now →</a>
+        </div>
+
+        <div class="course">
+            <span class="number">COURSE 02</span>
+            <h3>ADCA</h3>
+            <p>Advanced Computer Applications. ऑफिस सॉफ्टवेयर और डिजिटल कार्यों की ट्रेनिंग।</p>
+             <p><strong>Course Fee: ₹5,999</strong></p>
+            <a href="#contact">Enquire Now →</a>
+        </div>
+
+        <div class="course">
+            <span class="number">COURSE 03</span>
+            <h3>Graphic Design + AI</h3>
+            <p>Photoshop, Illustrator और आधुनिक डिजाइन टूल्स सीखें।</p>
+             <p><strong>Course Fee: ₹9,999</strong></p>
+            <a href="#contact">Enquire Now →</a>
+        </div>
+
+        <div class="course">
+            <span class="number">COURSE 04</span>
+            <h3>Video Editing</h3>
+            <p>वीडियो एडिटिंग और क्रिएटिव कंटेंट बनाने की स्किल्स सीखें।</p>
+             <p><strong>Course Fee: ₹2,999</strong></p>
+            <a href="#contact">Enquire Now →</a>
+        </div>
+
+        <div class="course">
+            <span class="number">COURSE 05</span>
+            <h3>Spoken English</h3>
+            <p>अपनी अंग्रेजी बातचीत और कम्युनिकेशन स्किल्स को बेहतर बनाएँ।</p>
+             <p><strong>Course Fee: ₹2,999</strong></p>
+            <a href="#contact">Enquire Now →</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="section-title">
+        <h2>Why Choose FrameLab?</h2>
+    </div>
+
+    <p>FrameLab School of Digital Skills में प्रैक्टिकल लर्निंग और डिजिटल स्किल्स पर ध्यान दिया जाता है।</p>
+    <p>हमारा उद्देश्य विद्यार्थियों को नई तकनीक सीखने और अपने करियर के अवसर बढ़ाने में मदद करना है।</p>
+</section>
+
+<section class="contact" id="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>अपने पसंदीदा कोर्स की जानकारी के लिए संपर्क करें।</p>
+    </div>
+
+    <p><strong>Institute:</strong> FrameLab School of Digital Skills</p>
+    <p><strong>Address:</strong> Near Devi Mandir, Purani Thana Road, Obra, Aurangabad, Bihar - 824124</p>
+<p>
+  <a href="https://www.google.com/maps/search/?api=1&query=FrameLab+computer+Obra+Bihar"
+     target="_blank">
+     Get Directions on Google Maps
+  </a>
+</p>
+    <a class="btn btn-blue"
+       href="https://wa.me/918252442641?text=Hello%20FrameLab%2C%20mujhe%20course%20ki%20jankari%20chahiye">
+       WhatsApp for Admission
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 FrameLab School of Digital Skills. All Rights Reserved.</p>
+    <p>Skills Today. Success Tomorrow.</p>
+</footer>
+
+</body>
+</html>
